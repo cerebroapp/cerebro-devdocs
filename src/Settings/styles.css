@@ -1,0 +1,23 @@
+.settings {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.group {
+  font-size: 1.2em;
+  line-height: 135%;
+  margin: 20px 0;
+}
+
+.iconPlaceholder {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.docIcon {
+  opacity: .7;
+  max-width: 22px;
+  max-height: 22px;
+  margin-right: 10px;
+}

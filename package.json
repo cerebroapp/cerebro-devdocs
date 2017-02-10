@@ -1,0 +1,43 @@
+{
+  "name": "cerebro-devdocs",
+  "version": "0.0.1",
+  "description": "Cerebro plugin for devdocs.io documentations",
+  "license": "MIT",
+  "repository": "KELiON/cerebro-devdocs",
+  "author": {
+    "name": "Alexandr Subbotin",
+    "email": "kelionweb@gmail.com",
+    "url": "asubbotin.ru"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "webpack && babili dist -d dist --compact --no-comments",
+    "debug": "./scripts/debug",
+    "prepublish": "rm -rf ./dist && npm run build"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "cerebro",
+    "cerebro-plugin"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babili": "0.0.9",
+    "cerebro-tools": "^0.1.0",
+    "css-loader": "^0.26.0",
+    "fuse.js": "^2.6.1",
+    "lodash": "^4.17.4",
+    "raw-loader": "^0.5.1",
+    "react": "^15.4.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "2.1.0-beta.27"
+  }
+}
