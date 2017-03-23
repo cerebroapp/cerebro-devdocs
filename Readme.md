@@ -1,5 +1,7 @@
 # cerebro-devdocs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KELiON/cerebro-devdocs.svg)](https://greenkeeper.io/)
+
 > [Cerebro](http://www.cerebroapp.com) plugin for devdocs.io documentations
 
 ![](screenshot.gif)
