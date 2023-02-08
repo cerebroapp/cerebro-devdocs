@@ -13,7 +13,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "build": "webpack && babili dist -d dist",
+    "build": "webpack && babili dist -d dist --compact --no-comments",
     "debug": "./scripts/debug",
     "prepublish": "shx rm -rf ./dist && npm run build"
   },
