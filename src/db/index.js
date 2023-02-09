@@ -30,12 +30,12 @@ cache.load().then(json => {
 const slugToGroup = slug => slug.split('~')[0]
 
 const fetchDb = doc => (
-  fetch(`https://docs.devdocs.io/${doc.slug}/db.json`)
+  fetch(`https://documents.devdocs.io/${doc.slug}/db.json`)
     .then(response => response.json())
 )
 
 const fetchEntries = doc => (
-  fetch(`https://docs.devdocs.io/${doc.slug}/index.json`)
+  fetch(`https://documents.devdocs.io/${doc.slug}/index.json`)
     .then(response => response.json())
     .then(json => json.entries)
 )

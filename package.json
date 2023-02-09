@@ -15,7 +15,7 @@
   "scripts": {
     "build": "webpack && babili dist -d dist --compact --no-comments",
     "debug": "./scripts/debug",
-    "prepublish": "rm -rf ./dist && npm run build"
+    "prepublish": "shx rm -rf ./dist && npm run build"
   },
   "main": "dist/index.js",
   "keywords": [
@@ -36,8 +36,12 @@
     "lodash": "^4.17.4",
     "raw-loader": "^0.5.1",
     "react": "^15.4.1",
+    "shx": "^0.3.4",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "2.1.0-beta.27"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9"
   }
 }
